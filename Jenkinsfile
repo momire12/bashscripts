@@ -8,7 +8,7 @@ node(){
     stage('Build'){
         sh "sh untilloop.sh"
     }
-    if (${environment} == 'Dev'){
+    if (params.environment == 'Dev'){
         stage('Array'){
             sh "sh array"
         }
