@@ -1,6 +1,6 @@
 node('maven'){
     stage('Checkout'){
-        checkout scm
+        checkout scm //commenting
     }
     stage('Printing Parameter'){
         sh "echo ${environment}"
