@@ -1,7 +1,5 @@
 pipeline{
-    agent {
-        label 'agent1'
-    }
+    agent any
 
     environment {
         project = "Test"
@@ -18,17 +16,4 @@ pipeline{
             }
         }
     }
-    post {
-        success {
-            echo "Success"
-            sh 'mail -s "Success" lokesh.mydilse@gmail.com'
-        }
-        failure {
-            echo "Failed"
-            sh 'mail -s "Failed" lokesh.mydilse@gmail.com'
-        }
-        always {
-            deleteDir()
-        }
-    }
-}
+}    
