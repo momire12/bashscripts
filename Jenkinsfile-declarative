@@ -16,4 +16,12 @@ pipeline{
             }
         }
     }
+    post {
+       echo "Success"
+       sh 'mail -s "Success momire09@gmail.com'
+    }
+    always {
+        delete()}
+	}
+    }	
 }    
