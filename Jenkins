@@ -11,4 +11,4 @@ node(){
     stage('Notify'){
 	sh 'mail -s "the job ran fine" momire09@gmail.com'
     }
-} }
+ }
