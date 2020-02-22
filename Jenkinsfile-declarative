@@ -20,8 +20,12 @@ pipeline{
        echo "Success"
        sh 'mail -s "Success momire09@gmail.com'
     }
+    failure {
+        echo "Failed"
+	sh 'mail -s "Failed" momire09@gmail.com
+    }	
     always {
-        delete()}
+        deleteDir()
 	}
     }	
 }    
