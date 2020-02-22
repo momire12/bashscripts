@@ -22,7 +22,7 @@ pipeline{
     }
     failure {
         echo "Failed"
-	sh 'mail -s "Failed" momire09@gmail.com
+	sh 'mail -s "Failed" momire09@gmail.com'
     }	
     always {
         deleteDir()
